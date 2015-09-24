@@ -1,3 +1,4 @@
+    directory = []
 loop do
     print "input your name"
     name = gets.chomp
@@ -8,11 +9,13 @@ loop do
     print "input your gender"
     gender = gets.chomp
 
-    if gender != "female" or "male"
+    if gender != "female" or gender != "male"
         gender = "male"
-        end
+    end
     
-    print phonenumber
+    directory << {name: name, phonenumber: phonenumber, gender: gender}
 
+        puts directory
+    
 break if name == "exit"
 end
