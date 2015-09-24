@@ -14,8 +14,9 @@ loop do
     end
     
     directory << {name: name, phonenumber: phonenumber, gender: gender}
-
-        puts directory
+    
+    
+    puts directory
     
 break if name == "exit"
 end
